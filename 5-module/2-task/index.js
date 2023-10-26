@@ -8,5 +8,8 @@ function toggleText() {
     } else {
       text.hidden = false;
     }
+
+    //Best variant
+    // text.hidden = !text.hidden;
   });
 }
