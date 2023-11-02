@@ -52,8 +52,6 @@ export default class UserTable {
   }
 
   onRowDelete(event) {
-    console.log('in on delete', event);
     event.target.closest('tr').remove();
-
   }
 }
