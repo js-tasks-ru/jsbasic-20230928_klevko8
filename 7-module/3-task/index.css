@@ -18,6 +18,7 @@
   z-index: 1;
   background: linear-gradient(90deg, #f3e273 0%, #dd6428 52%, #d31c34 100%);
   transform: translate(0, -50%);
+  width: 0;
 }
 
 .slider_dragging .slider__thumb {
