@@ -16,6 +16,7 @@
   left: 0;
   right: 0;
   z-index: 1;
+  width: 0;
   background: linear-gradient(90deg, #f3e273 0%, #dd6428 52%, #d31c34 100%);
   transform: translate(0, -50%);
 }
