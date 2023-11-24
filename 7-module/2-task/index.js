@@ -39,7 +39,9 @@ export default class Modal {
 
   setTitle = (title) => {
     const modalTitle = document.body.querySelector('.modal__title');
-    modalTitle.innerHTML = title;
+    if (modalTitle) {
+      modalTitle.innerHTML = title;
+    }
   };
 
   setBody = (bodyElem) => {
