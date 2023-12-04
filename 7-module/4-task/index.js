@@ -9,6 +9,7 @@ export default class StepSlider {
     this.activateCategory();
     this.handleDragAndDrop();
 
+    this.setInitialPosition(value, steps);
   }
 
   createSlider = () => {
@@ -146,5 +147,15 @@ export default class StepSlider {
     });
     this.elem.dispatchEvent(customEvent);
   };
+
+  setInitialPosition = (value, steps) => {
+    const valuePercents = value / (steps - 1) * 100;
+
+    const thumb = this.elem.querySelector('.slider__thumb');
+    thumb.style.left = `${valuePercents}%`;
+
+    const progress = this.elem.querySelector('.slider__progress');
+    progress.style.width = `${valuePercents}%`;
+  }
 }
 
